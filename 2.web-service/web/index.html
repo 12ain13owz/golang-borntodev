@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre data-list></pre>
+    <div id="myData"></div>
+  </body>
+</html>
+<script>
+  const url =
+    "https://f1ae-2001-fb1-d8-4155-78cf-9d2b-680f-770d.ngrok.io/course";
+
+  fetch(url)
+    .then((data) => data.json())
+    .then((value) => display(value));
+
+  function display(value) {
+    appendData(value);
+    // document.querySelector("pre").innerText = JSON.stringify(value, null, 4);
+  }
+
+  function appendData(data) {
+    const mainContainer = document.querySelector("#myData");
+    for (let i = 0; i < data.length; i++) {
+      const div = document.createElement("div");
+      div.innerHTML =
+        "CourseID: " +
+        data[i].ID +
+        " " +
+        data[i].Name +
+        " " +
+        data[i].Price +
+        " " +
+        data[i].Instructor;
+
+      mainContainer.appendChild(div);
+    }
+  }
+</script>

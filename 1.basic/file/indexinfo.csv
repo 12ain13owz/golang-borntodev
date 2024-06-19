@@ -1,0 +1,15 @@
+Region,Exchange,Index,Currency
+United states,New York,NYA,USD
+United states,NASDAQ,IXIC,USD
+Hong Kong,Hong Kong,HSI,HKD
+China,Shanghai,000001.SS,CNY
+Japan,Tokyo,N225,JPY
+Europe,Euronext,N100,EUR
+China,Shenzhen,399001.SZ,CNY
+Canada,Toronto,GSPTSE,CAD
+India,National,NSEI,INR
+Germany,Frankfurt,GDAXI,EUR
+Korea,Korea Exchange,KS11,KRW
+Switzerland,SIX Swiss,SSMI,CHF
+Taiwan,Taiwan,TWII,TWD
+South Africa,Johannesb,J203.JO,ZAR
